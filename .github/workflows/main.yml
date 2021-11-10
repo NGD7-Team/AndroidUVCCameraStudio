@@ -38,7 +38,7 @@ jobs:
           
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: |
-          //cd src/android
+          #//cd src/android
           chmod +x ./gradlew
           ./gradlew --stacktrace assemble
           ls -R
